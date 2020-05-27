@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    android:backgroundTint="#81FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_before"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Ожидаемая дата"
+        android:textColor="#3F0980"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_before"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_remain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="#3F0980"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_remain"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingStart="4dp"
+        android:paddingLeft="8dp"
+        android:paddingEnd="4dp"
+        android:paddingRight="8dp"
+        android:text="Осталось дней"
+        android:textColor="#3F0980"
+        android:textSize="24sp"></TextView>
+
+    <TextView
+        android:id="@+id/tv_countDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_remain"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/tv_days"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="#3F0980"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+</RelativeLayout>
